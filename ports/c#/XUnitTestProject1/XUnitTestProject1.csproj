@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ANTLRv4Lexer.g4" />
+    <None Remove="ANTLRv4Parser.g4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Antlr4 Include="ANTLRv4Lexer.g4">
+      <CustomToolNamespace>XUnitTestProject1</CustomToolNamespace>
+    </Antlr4>
+    <Antlr4 Include="ANTLRv4Parser.g4">
+      <CustomToolNamespace>XUnitTestProject1</CustomToolNamespace>
+    </Antlr4>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antlr4.Runtime.Standard" Version="4.7.2" />
+    <PackageReference Include="Antlr4BuildTasks" Version="1.0.8" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Antlr4CodeCompletion.Core\Antlr4CodeCompletion.Core.csproj" />
+  </ItemGroup>
+
+</Project>

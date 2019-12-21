@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Antlr4CodeCompletion.Core",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Antlr4CodeCompletion.CoreUnitTest", "test\Antlr4CodeCompletion.CoreUnitTest\Antlr4CodeCompletion.CoreUnitTest.csproj", "{2F5F1BBC-A291-4F3B-82F2-8ACB10339463}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{C3A399FF-7441-4272-9BD8-FBE4A768FB8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{2F5F1BBC-A291-4F3B-82F2-8ACB10339463}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F5F1BBC-A291-4F3B-82F2-8ACB10339463}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F5F1BBC-A291-4F3B-82F2-8ACB10339463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3A399FF-7441-4272-9BD8-FBE4A768FB8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A399FF-7441-4272-9BD8-FBE4A768FB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A399FF-7441-4272-9BD8-FBE4A768FB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A399FF-7441-4272-9BD8-FBE4A768FB8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{65519139-6C6B-4659-B196-5897291043CA} = {A4E8FF40-1CDF-4D04-BF8E-D65E4A5749B7}
 		{2F5F1BBC-A291-4F3B-82F2-8ACB10339463} = {615EB99D-5EFD-4805-8E30-05A06E6FFB71}
+		{C3A399FF-7441-4272-9BD8-FBE4A768FB8D} = {615EB99D-5EFD-4805-8E30-05A06E6FFB71}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0C71D64E-069D-4A46-9412-0AE569E77D8B}

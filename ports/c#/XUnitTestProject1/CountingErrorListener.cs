@@ -1,7 +1,6 @@
 using Antlr4.Runtime;
-using Antlr4.Runtime.Misc;
 
-namespace Antlr4CodeCompletion.CoreUnitTest.Utils
+namespace XUnitTestProject1
 {
     using System.IO;
 

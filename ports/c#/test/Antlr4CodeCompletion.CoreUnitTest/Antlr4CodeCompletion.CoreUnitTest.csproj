@@ -7,11 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Antlr4" Version="4.6.6">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Antlr4.Runtime" Version="4.6.6" />
+    <None Remove="Grammar\Expr.g4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Antlr4 Include="Grammar\Expr.g4">
+      <Generator>MSBuild:Compile</Generator>
+    </Antlr4>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antlr4.Runtime.Standard" Version="4.7.2" />
+    <PackageReference Include="Antlr4BuildTasks" Version="1.0.8" />
     <PackageReference Include="AutoBogus" Version="2.6.0" />
     <PackageReference Include="Bogus" Version="28.0.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
@@ -26,12 +33,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Antlr4CodeCompletion.Core\Antlr4CodeCompletion.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Grammar\Expr.g4">
-      <Generator>MSBuild:Compile</Generator>
-    </None>
   </ItemGroup>
 
 </Project>

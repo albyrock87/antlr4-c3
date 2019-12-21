@@ -100,7 +100,7 @@ namespace Antlr4CodeCompletion.CoreUnitTest.CodeCompletion
             var lexer = new ExprLexer(inputStream);
             var tokenStream = new CommonTokenStream(lexer);
             var parser = new ExprParser(tokenStream);
-            parser.Interpreter.PredictionMode = PredictionMode.LlExactAmbigDetection;
+            parser.Interpreter.PredictionMode = PredictionMode.LL_EXACT_AMBIG_DETECTION;
 
             lexer.RemoveErrorListeners();
             parser.RemoveErrorListeners();
